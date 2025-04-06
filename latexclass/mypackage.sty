@@ -1,0 +1,74 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{mypackage}
+
+
+%%%%%%   Start Loading Packages %%%%%%
+\RequirePackage{fontspec}
+\RequirePackage{csquotes}
+\RequirePackage{microtype}
+
+\RequirePackage{xcolor}
+\RequirePackage[a4paper,margin=1in]{geometry}
+\RequirePackage{multicol}
+\RequirePackage{fancyhdr}
+\RequirePackage[inline]{enumitem}
+\RequirePackage{authblk}
+\RequirePackage{titling}
+
+\RequirePackage{mathtools}
+\RequirePackage[bold-style=ISO]{unicode-math}
+\RequirePackage{amsthm}
+\RequirePackage{thmtools}
+\RequirePackage{empheq}
+\RequirePackage{accents}
+\RequirePackage{cancel}
+\RequirePackage{xfrac}
+\RequirePackage{derivative}
+\RequirePackage[parse-numbers=false]{siunitx}
+\RequirePackage{tikz}
+\RequirePackage{tikz-cd}
+\RequirePackage{extarrows}
+\RequirePackage{xeCJK}
+
+
+\RequirePackage{graphicx}
+\RequirePackage{xltabular}
+\RequirePackage{booktabs}
+\RequirePackage{multirow}
+\RequirePackage{float}
+\RequirePackage{caption}
+\RequirePackage{subcaption}
+\RequirePackage{arydshln}
+\RequirePackage[style=numeric,autolang=other,backend=biber]{biblatex}
+\RequirePackage{imakeidx}
+
+
+
+
+
+
+
+
+
+
+
+%%%%% End Loading Packages %%%%%
+
+%%%   Solute the problem of fonts %%%
+\iffalse
+\setmathfont{LatinModernMath-Regular}
+\setmathfont[BoldFont=*,StylisticSet=8]{STIXTwoMath-Regular}
+setmathfont[range=bb]{TeXGyrePagellaMath-Regular}
+\setmathfont{XITS Math}[StylisticSet=1,range={cal,bfcal}]
+\setmathfont[range={bb,cal}]{TeXGyrePagellaMath-Regular}
+\setmathfont[BoldFont=*,range={scr,bfscr},StylisticSet=1]{STIXTwoMath-Regular}
+\fi
+
+\setmathfont{Latin Modern Math}  
+\setmathfont{STIX Two Math}[range={cal,bfcal,"0030-"0039}, Style=Alternate]  
+\setmathfont{XITS Math}[range={scr,bfscr,"0030-"0039}] 
+\setmathfont[range={bb}]{TeXGyrePagellaMath-Regular}
+
+
+
+\endinput
